@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="25dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/img_product"
+            android:src="@drawable/popcorn"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <TextView
+            android:id="@+id/txt_product"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/gothic_a1_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#363636"
+            android:textSize="30sp"
+            tools:text="노브랜드 팝콘"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/gothic_a1_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#424242"
+                    android:textSize="18sp"
+                    android:text="인터넷 최저가"/>
+
+                <TextView
+                    android:id="@+id/txt_price"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/gothic_a1_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff8800"
+                    android:textSize="24sp"
+                    tools:text="1,180원"/>
+
+                <TextView
+                    android:id="@+id/txt_mall"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/gothic_a1_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#424242"
+                    android:textSize="16sp"
+                    tools:text="(8몰)"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@id/line1"
+                android:layout_alignStart="@id/line1"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/gothic_a1_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#424242"
+                    android:textSize="18sp"
+                    android:text="만족도"/>
+
+                <ImageView
+                    android:id="@+id/star1"
+                    android:visibility="invisible"
+                    tools:visibility="visible"
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="4dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/ic_star"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp" />
+
+                <ImageView
+                    android:id="@+id/star2"
+                    android:visibility="invisible"
+                    tools:visibility="visible"
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="4dp"
+                    android:src="@drawable/ic_star"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp" />
+
+                <ImageView
+                    android:id="@+id/star3"
+                    android:visibility="invisible"
+                    tools:visibility="visible"
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="4dp"
+                    android:src="@drawable/ic_star"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp" />
+
+                <ImageView
+                    android:id="@+id/star4"
+                    android:visibility="invisible"
+                    tools:visibility="visible"
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="4dp"
+                    android:src="@drawable/ic_star"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp" />
+
+                <ImageView
+                    android:id="@+id/star5"
+                    android:visibility="invisible"
+                    tools:visibility="visible"
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="4dp"
+                    android:src="@drawable/ic_star"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp" />
+
+                <TextView
+                    android:id="@+id/txt_rater"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/gothic_a1_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#424242"
+                    android:textSize="16sp"
+                    tools:text="(123명)"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

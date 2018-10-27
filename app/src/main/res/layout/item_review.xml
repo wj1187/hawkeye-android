@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="25dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_mall"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_user"
+                    android:fontFamily="@font/gothic_a1_extrabold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#c6c6c6"
+                    android:textSize="12sp"
+                    tools:text="abc****"/>
+
+                <TextView
+                    android:id="@+id/txt_timestamp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/gothic_a1_extrabold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#c6c6c6"
+                    android:textSize="12sp"
+                    tools:text="2018.10.26"/>
+
+                <ImageView
+                    android:id="@+id/star1"
+                    android:visibility="invisible"
+                    tools:visibility="visible"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/ic_star"
+                    android:paddingBottom="1dp"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp" />
+
+                <ImageView
+                    android:id="@+id/star2"
+                    android:visibility="invisible"
+                    tools:visibility="visible"
+                    android:src="@drawable/ic_star"
+                    android:paddingBottom="1dp"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp" />
+
+                <ImageView
+                    android:id="@+id/star3"
+                    android:visibility="invisible"
+                    tools:visibility="visible"
+                    android:src="@drawable/ic_star"
+                    android:paddingBottom="1dp"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp" />
+
+                <ImageView
+                    android:id="@+id/star4"
+                    android:visibility="invisible"
+                    tools:visibility="visible"
+                    android:src="@drawable/ic_star"
+                    android:paddingBottom="1dp"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp" />
+
+                <ImageView
+                    android:id="@+id/star5"
+                    android:visibility="invisible"
+                    tools:visibility="visible"
+                    android:src="@drawable/ic_star"
+                    android:paddingBottom="1dp"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:ellipsize="end"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/gothic_a1_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#363636"
+                android:textSize="16sp"
+                tools:text="노브랜드 제품은 가격 대비노브랜드 제품은 가격 대비"/>
+
+            <TextView
+                android:id="@+id/txt_body"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/gothic_a1_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#424242"
+                android:textSize="14sp"
+                tools:text="노브랜드 제품은 가격 대비 품질이 좋은 것 같아서 경제적이라 자주 이용합니다. 팝콘이 너무 짜 않고 너무 기름지지도 않고 적당히 고소하고 맛있네요."/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

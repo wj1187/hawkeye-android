@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CaptureActivity">
+
+    <io.coin.hawkeye.tools.AutoFitTextureView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/texture"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/txt_guide"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/gothic_a1_semibold"
+        android:textColor="#fff"
+        android:text="상품을 점선에 맞춰주세요"/>
+
+    <ImageView
+        android:id="@+id/frame"
+        android:scaleType="fitXY"
+        android:layout_above="@id/btn_shutter"
+        android:layout_below="@id/txt_guide"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/frame"/>
+
+    <ImageView
+        android:id="@+id/btn_shutter"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:src="@drawable/ic_shutter"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+</RelativeLayout>
