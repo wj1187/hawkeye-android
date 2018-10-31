@@ -7,7 +7,6 @@ import com.google.gson.Gson
 import id.zelory.compressor.Compressor
 import io.coin.hawkeye.activity.ProductActivity
 import io.coin.hawkeye.api.ApiProvider
-import io.coin.hawkeye.model.Product
 import okhttp3.MediaType
 
 import java.io.File
@@ -29,14 +28,14 @@ internal class ImageUploader(
     private val activity: Activity,
 
     /**
-         * The JPEG image
-         */
-        private val image: Image,
+     * The JPEG image
+     */
+    private val image: Image,
 
     /**
-         * The file we save the image into.
-         */
-        private val file: File
+     * The file we save the image into.
+     */
+    private val file: File
 ) : Runnable {
 
     override fun run() {
@@ -60,24 +59,18 @@ internal class ImageUploader(
                 }
             }
 
-            Log.d("dimidimi", "log0")
-
             val compressedImageFile = Compressor(activity).compressToFile(file)
             val reqFile = RequestBody.create(MediaType.parse("image/*"), compressedImageFile)
             val body = MultipartBody.Part.createFormData("image", compressedImageFile.name, reqFile)
-
-            Log.d("dimidimi", "log1")
 
             val call = ApiProvider.provideApi(activity).postImage(reqFile)
             ApiProvider.request(
                 call = call,
                 success = {
-                    Log.d("dimidimi", "log2")
                     if(it.code()==200) {
                         activity.startActivity<ProductActivity>("data" to Gson().toJson(it.body()))
                         activity.finish()
                     } else{
-                        Log.d("code", it.toString())
                     }
                 },
                 fail = {
@@ -91,6 +84,6 @@ internal class ImageUploader(
         /**
          * Tag for the [Log].
          */
-        private val TAG = "ImageUploader"
+        private const val TAG = "ImageUploader"
     }
 }

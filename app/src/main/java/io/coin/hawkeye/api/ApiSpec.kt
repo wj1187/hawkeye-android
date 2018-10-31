@@ -1,8 +1,7 @@
 package io.coin.hawkeye.api
 
 import io.coin.hawkeye.model.Product
-import kotlinx.coroutines.experimental.Deferred
-import okhttp3.MultipartBody
+import kotlinx.coroutines.Deferred
 import okhttp3.RequestBody
 import retrofit2.Response
 import retrofit2.http.*
